@@ -45,7 +45,7 @@ function unserialize (data) {
       if (code < 0x0080) {
         return 0;
       }
-      if (code < 0x0800) {
+      if (code < 0xFFFF) {
         return 1;
       }
       return 2;
